@@ -1,0 +1,17 @@
+{
+  "user": {
+    "email": "adrian.klimasevski@gmail.com",
+    "password": "1234567890"
+  },
+  "billing": {
+    "firstName": "Adrian",
+    "lastName": "Klimaševski",
+    "email": "adrian.klimasevski@gmail.com",
+    "country": "156",
+    "city": "Vilnius",
+    "address": "Traku g. 4",
+    "zip": "05670",
+    "phone": "+37063402123"
+  }
+}
+

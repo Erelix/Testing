@@ -1,0 +1,334 @@
+{
+  "id": "0c42921e-62d0-49a1-9266-6681f4fe6498",
+  "version": "2.0",
+  "name": "eshop",
+  "url": "https://demowebshop.tricentis.com/",
+  "tests": [{
+    "id": "76949d6b-6040-46f6-9f40-c09102e394bd",
+    "name": "TC_0001",
+    "commands": [{
+      "id": "6e0bc218-7671-4846-85dc-102ff1b23b3d",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a16b5aa-3873-4600-9978-317db876037a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x1195",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba90f246-b978-478e-9db2-5d86ddf280ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Computers",
+      "targets": [
+        ["linkText=Computers", "linkText"],
+        ["css=.inactive:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Computers')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/computers')])[3]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f70e7dcd-9a3e-4743-b69f-f8dc2842e4cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-box:nth-child(1) img",
+      "targets": [
+        ["css=.item-box:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='Picture for category Desktops']", "xpath:img"],
+        ["xpath=//div[2]/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd593253-44bc-420e-9497-be7761f319d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .PriceRange",
+      "targets": [
+        ["css=li:nth-child(3) .PriceRange", "css:finder"],
+        ["xpath=//div[2]/ul/li[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f63fa237-31c0-46f5-b934-0934d013a1b4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Build your own expensive computer",
+      "targets": [
+        ["linkText=Build your own expensive computer", "linkText"],
+        ["css=.item-box:nth-child(2) .details a", "css:finder"],
+        ["xpath=//a[contains(text(),'Build your own expensive computer')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/build-your-own-expensive-computer-2')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Build your own expensive computer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39510b06-e078-4723-80cd-cf720c711125",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button-74",
+      "targets": [
+        ["id=add-to-cart-button-74", "id"],
+        ["css=#add-to-cart-button-74", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button-74']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[8]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16b1fc39-9c8f-42a2-b2d2-49c38b0aaac4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-logo img",
+      "targets": [
+        ["css=.header-logo img", "css:finder"],
+        ["xpath=//img[@alt='Tricentis Demo Web Shop']", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d58febbf-2276-40e6-8049-9c748b5bc3b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Computers",
+      "targets": [
+        ["linkText=Computers", "linkText"],
+        ["css=.inactive:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Computers')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/computers')])[3]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7690416d-688f-4880-acb0-6f2e3ca61eb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item-box:nth-child(3) img",
+      "targets": [
+        ["css=.item-box:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@alt='Picture for category Accessories']", "xpath:img"],
+        ["xpath=//div[3]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0bd3be6-87c4-43aa-9a98-8ffe740a1861",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TCP Instructor Led Training",
+      "targets": [
+        ["linkText=TCP Instructor Led Training", "linkText"],
+        ["css=.item-box:nth-child(2) .details a", "css:finder"],
+        ["xpath=//a[contains(text(),'TCP Instructor Led Training')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/copy-of-tcp-self-paced-training-2')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'TCP Instructor Led Training')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f574487-6bd8-4b5b-a66b-fb9d58bf2170",
+      "comment": "",
+      "command": "click",
+      "target": "id=addtocart_66_EnteredQuantity",
+      "targets": [
+        ["id=addtocart_66_EnteredQuantity", "id"],
+        ["name=addtocart_66.EnteredQuantity", "name"],
+        ["css=#addtocart_66_EnteredQuantity", "css:finder"],
+        ["xpath=//input[@id='addtocart_66_EnteredQuantity']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57e33f69-49df-4d2b-b306-a2dd4b821e27",
+      "comment": "",
+      "command": "type",
+      "target": "id=addtocart_66_EnteredQuantity",
+      "targets": [
+        ["id=addtocart_66_EnteredQuantity", "id"],
+        ["name=addtocart_66.EnteredQuantity", "name"],
+        ["css=#addtocart_66_EnteredQuantity", "css:finder"],
+        ["xpath=//input[@id='addtocart_66_EnteredQuantity']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "f7731f8b-7820-454b-9ebd-7e8e2054b364",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-price",
+      "targets": [
+        ["css=.product-price", "css:finder"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6803d2c3-bd78-47f2-b2ef-0452630a30b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button-66",
+      "targets": [
+        ["id=add-to-cart-button-66", "id"],
+        ["css=#add-to-cart-button-66", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button-66']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[5]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "710d2ca1-4f37-410d-b916-131b9a513d9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ico-cart > .cart-label",
+      "targets": [
+        ["css=.ico-cart > .cart-label", "css:finder"],
+        ["xpath=//li[@id='topcartlink']/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shopping cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d47955f-4321-43ba-8b93-240b49008b7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.edit-item > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/build-your-own-expensive-computer-2?updatecartitemid=6307250')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "298832e2-0998-4605-8678-5a354ec49b01",
+      "comment": "",
+      "command": "click",
+      "target": "id=product_attribute_74_6_27_85",
+      "targets": [
+        ["id=product_attribute_74_6_27_85", "id"],
+        ["css=#product_attribute_74_6_27_85", "css:finder"],
+        ["xpath=//input[@id='product_attribute_74_6_27_85']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[6]/dl/dd[2]/ul/li[3]/input", "xpath:idRelative"],
+        ["xpath=//dd[2]/ul/li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b19b8307-a6cb-4da8-aad4-6430baf64217",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button-74",
+      "targets": [
+        ["id=add-to-cart-button-74", "id"],
+        ["css=#add-to-cart-button-74", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button-74']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[8]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f362f8af-9b9e-4dfa-bb4c-30a691d7f036",
+      "comment": "",
+      "command": "click",
+      "target": "css=#topcartlink > .ico-cart",
+      "targets": [
+        ["css=#topcartlink > .ico-cart", "css:finder"],
+        ["xpath=//li[@id='topcartlink']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94453616-c864-4a31-87c8-ab0b8f68aaa6",
+      "comment": "",
+      "command": "click",
+      "target": "name=itemquantity6307257",
+      "targets": [
+        ["name=itemquantity6307257", "name"],
+        ["css=.cart-item-row:nth-child(2) .qty-input", "css:finder"],
+        ["xpath=//input[@name='itemquantity6307257']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ddb6daa-9b64-4f51-a2ba-4f806139506b",
+      "comment": "",
+      "command": "type",
+      "target": "name=itemquantity6307257",
+      "targets": [
+        ["name=itemquantity6307257", "name"],
+        ["css=.cart-item-row:nth-child(2) .qty-input", "css:finder"],
+        ["xpath=//input[@name='itemquantity6307257']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[5]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "bce90491-2fe2-435b-88de-428d52cb2836",
+      "comment": "",
+      "command": "click",
+      "target": "css=.common-buttons",
+      "targets": [
+        ["css=.common-buttons", "css:finder"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59806504-bdec-45b8-9268-f7be8b669816",
+      "comment": "",
+      "command": "click",
+      "target": "name=updatecart",
+      "targets": [
+        ["name=updatecart", "name"],
+        ["css=.update-cart-button", "css:finder"],
+        ["xpath=//input[@name='updatecart']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dd4bd38-800c-4bfd-a55b-1cd729eeb67e",
+      "comment": "",
+      "command": "click",
+      "target": "id=termsofservice",
+      "targets": [
+        ["id=termsofservice", "id"],
+        ["name=termsofservice", "name"],
+        ["css=#termsofservice", "css:finder"],
+        ["xpath=//input[@id='termsofservice']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b0bd0ad-7dd0-4b1d-a630-74fe08227320",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout",
+      "targets": [
+        ["id=checkout", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkout", "css:finder"],
+        ["xpath=//button[@id='checkout']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "00c94eb8-c01a-4f7d-8185-6e457569674c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://demowebshop.tricentis.com/"],
+  "plugins": []
+}
