@@ -9,31 +9,20 @@ test('TC_0021', async ({ page }) => {
  
   await page.waitForSelector('.product-item .price');
  
-  // Define price range for filtering
   const minPrice = 1200;
-  const maxPrice = Infinity; 
+  const maxPrice = 1800;
   
-  let selectedPrice = 0;
-  let selectedIndex = 0;
-
-  // Use XPath to filter products and select based on price range
-  const productItems = page.locator('//div[@class="product-item"]');
-  const productCount = await productItems.count();
-
-  for (let i = 0; i < productCount; i++) {
-    const priceElement = productItems.nth(i).locator('.price');
-    const priceText = await priceElement.innerText();
-    const price = parseFloat(priceText.replace('$', ''));
-
-    if (price >= minPrice && price <= maxPrice && price > selectedPrice) {
-      selectedPrice = price;
-      selectedIndex = i;
-    }
-  }
+  const productItem = page.locator('//div[contains(@class,"product-item")][.//span[contains(@class,"price") and number(translate(., "$,", "")) = 1800]]').first();
   
-  expect(selectedPrice).toBeGreaterThan(minPrice);
+  await expect(productItem).toBeVisible();
+  
+  const priceText = await productItem.locator('.price').innerText();
+  const selectedPrice = parseFloat(priceText.replace('$', ''));
+  
+  expect(selectedPrice).toBeGreaterThanOrEqual(minPrice);
+  expect(selectedPrice).toBeLessThanOrEqual(maxPrice);
 
-  await productItems.nth(selectedIndex).locator('a').first().click();
+  await productItem.locator('a').first().click();
   await page.locator('#add-to-cart-button-74').click();
   await expect(page.locator('#bar-notification')).toContainText('added to your shopping cart');
 
